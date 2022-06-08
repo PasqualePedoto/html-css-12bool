@@ -150,11 +150,11 @@
 }
 
 .offset-2{
-    margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+    margin-left: calc(100% / 12 * 2); /* Equivale ad 2/12 */
 }
 
 .offset-3{
-    margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+    margin-left: calc(100% / 12  * 3); /* Equivale ad 3/12 */
 }
 
 .offset-4{
