@@ -1,0 +1,1118 @@
+/* RESPONSIVE */
+
+/** BREAKPOINTS 
+
+**extra-small < 576px (default
+**small             576px
+**medium            768px
+**large             992px
+**extra-large       1200px
+**extra-extra-large 1400px
+
+*/
+
+/* *** EXTRA SMALL *** */
+
+@media screen and (min-width: 576px) {
+    
+    /* Colonna */
+    
+    /* REGOLE PER TUTTE LE COLONNE */
+    
+    .row > [class^='column-sm']{
+        /* Così non sballa */
+        flex-shrink: 0;
+    
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+    
+    /* COLONNE CHE SI DIVIDONO LO SPAZIO EQUAMENTE */
+    
+    .row > .column-sm{
+        /* Cosicchè tutte le colonne avranno la stessa dimensione e quindi saranno uguali */
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    
+    /* GRIGLIA IN 12esimi */
+    
+    .row > .column-sm-1{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+    
+    .row > .column-sm-2{
+        flex-basis: calc( 100% / 12 * 2);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 2);
+    }
+
+    .row > .column-sm-3{
+        flex-basis: 25%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 25%;
+    }
+    
+    .row > .column-sm-4{
+        flex-basis: calc( 100% / 12 * 4);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 4);
+    }
+    
+    .row > .column-sm-5{
+        flex-basis: calc( 100% / 12 * 5);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 5);
+    }
+
+    .row > .column-sm-6{
+        flex-basis: calc(100% / 12 * 6);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .row > .column-sm-7{
+        flex-basis: calc(100% / 12 * 7);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .row > .column-sm-8{
+        flex-basis: calc(100% / 12 * 8);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .row > .column-sm-9{
+        flex-basis: calc(100% / 12 * 9);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .row > .column-sm-10{
+        flex-basis: calc(100% / 12 * 10);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .row > .column-sm-11{
+        flex-basis: calc(100% / 12 * 11);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .row > .column-sm-12{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+
+    /* OFFSET */
+
+    /* Posso spostare le colonne come voglio e di quanto voglio */
+
+    .offset-sm-0{
+    margin-left: 0;
+    }
+
+    .offset-sm-1{
+        margin-left: calc(100% / 12); /* Equivale ad 1/12 */
+    }
+
+    .offset-sm-2{
+        margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+    }
+
+    .offset-sm-3{
+        margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+    }
+
+    .offset-sm-4{
+        margin-left: calc(100% / 12 * 4) ; /* Equivale ad 4/12 */
+    }
+
+    .offset-sm-5{
+        margin-left: calc(100% / 12 * 5); /* Equivale ad 5/12 */
+    }
+
+    .offset-sm-6{
+        margin-left: calc(100% / 12 * 6); /* Equivale ad 6/12 */
+    }
+
+    .offset-sm-7{
+        margin-left: calc(100% / 12 * 7); /* Equivale ad 7/12 */
+    }
+
+    .offset-sm-8{
+        margin-left: calc(100% / 12 * 8); /* Equivale ad 8/12 */
+    }
+
+    .offset-sm-9{
+        margin-left: calc(100% / 12 * 9); /* Equivale ad 9/12 */
+    }
+
+    .offset-sm-10{
+        margin-left: calc(100% / 12 * 10); /* Equivale ad 10/12 */
+    }
+
+    .offset-sm-11{
+        margin-left: calc(100% / 12 * 11); /* Equivale ad 11/12 */
+    }
+
+    /* CLASSI FLEXBOX */
+
+    .display-sm-flex{      
+        display: flex;
+    }
+
+    .justify-content-sm-enter{        
+        justify-content: center;
+    }
+
+    .justify-content-sm-around{        
+        justify-content: space-around;
+    }
+
+    .justify-content-sm-between{       
+        justify-content: space-between;
+    }
+
+    .justify-content-sm-evenly{        
+        justify-content: space-evenly;
+    }
+
+    .justify-content-sm-start{     
+        justify-content: flex-start;
+    }
+
+    .justify-content-sm-end{       
+        justify-content: flex-end;
+    }
+
+    .align-items-sm-center{        
+        align-items: center;
+    }
+
+    .align-items-sm-start{     
+        align-items: flex-start;
+    }
+
+    .align-items-sm-end{       
+        align-items: flex-end;
+    }
+
+    .align-items-sm-stretch{       
+        align-items: stretch;
+    }
+
+    .align-self-sm-center{    
+        align-self: center;
+    }
+
+    .align-self-sm-start{
+        align-items: flex-start;
+    }
+
+    .align-self-sm-end{
+        align-items: flex-end;
+    }
+    
+}
+
+/* *** MEDIUM *** */
+
+@media screen and (min-width:768px){
+
+    /* Colonna */
+    
+    /* REGOLE PER TUTTE LE COLONNE */
+    
+    .row > [class^='column-med']{
+        /* Così non sballa */
+        flex-shrink: 0;
+    
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+    
+    /* COLONNE CHE SI DIVIDONO LO SPAZIO EQUAMENTE */
+    
+    .row > .column-med{
+        /* Cosicchè tutte le colonne avranno la stessa dimensione e quindi saranno uguali */
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    
+    /* GRIGLIA IN 12esimi */
+
+    .row > .column-med-1{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+    
+    .row > .column-med-2{
+        flex-basis: calc( 100% / 12 * 2);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 2);
+    }
+
+    .row > .column-med-3{
+        flex-basis: 25%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 25%;
+    }
+    
+    .row > .column-med-4{
+        flex-basis: calc( 100% / 12 * 4);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 4);
+    }
+    
+    .row > .column-med-5{
+        flex-basis: calc( 100% / 12 * 5);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 5);
+    }
+
+    .row > .column-med-6{
+        flex-basis: calc(100% / 12 * 6);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .row > .column-med-7{
+        flex-basis: calc(100% / 12 * 7);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .row > .column-med-8{
+        flex-basis: calc(100% / 12 * 8);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .row > .column-med-9{
+        flex-basis: calc(100% / 12 * 9);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .row > .column-med-10{
+        flex-basis: calc(100% / 12 * 10);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .row > .column-med-11{
+        flex-basis: calc(100% / 12 * 11);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .row > .column-med-12{
+        flex-basis: 100%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 100%;
+    }
+
+    /* OFFSET */
+
+    /* Posso spostare le colonne come voglio e di quanto voglio */
+
+    .offset-med-0{
+        margin-left: 0;
+        }
+    
+        .offset-med-1{
+            margin-left: calc(100% / 12); /* Equivale ad 1/12 */
+        }
+    
+        .offset-med-2{
+            margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+        }
+    
+        .offset-med-3{
+            margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+        }
+    
+        .offset-med-4{
+            margin-left: calc(100% / 12 * 4) ; /* Equivale ad 4/12 */
+        }
+    
+        .offset-med-5{
+            margin-left: calc(100% / 12 * 5); /* Equivale ad 5/12 */
+        }
+    
+        .offset-med-6{
+            margin-left: calc(100% / 12 * 6); /* Equivale ad 6/12 */
+        }
+    
+        .offset-med-7{
+            margin-left: calc(100% / 12 * 7); /* Equivale ad 7/12 */
+        }
+    
+        .offset-med-8{
+            margin-left: calc(100% / 12 * 8); /* Equivale ad 8/12 */
+        }
+    
+        .offset-med-9{
+            margin-left: calc(100% / 12 * 9); /* Equivale ad 9/12 */
+        }
+    
+        .offset-med-10{
+            margin-left: calc(100% / 12 * 10); /* Equivale ad 10/12 */
+        }
+    
+        .offset-med-11{
+            margin-left: calc(100% / 12 * 11); /* Equivale ad 11/12 */
+        }
+    
+        /* CLASSI FLEXBOX */
+    
+        .display-med-flex{      
+            display: flex;
+        }
+    
+        .justify-content-med-enter{        
+            justify-content: center;
+        }
+    
+        .justify-content-med-around{        
+            justify-content: space-around;
+        }
+    
+        .justify-content-med-between{       
+            justify-content: space-between;
+        }
+    
+        .justify-content-med-evenly{        
+            justify-content: space-evenly;
+        }
+    
+        .justify-content-med-start{     
+            justify-content: flex-start;
+        }
+    
+        .justify-content-med-end{       
+            justify-content: flex-end;
+        }
+    
+        .align-items-med-center{        
+            align-items: center;
+        }
+    
+        .align-items-med-start{     
+            align-items: flex-start;
+        }
+    
+        .align-items-med-end{       
+            align-items: flex-end;
+        }
+    
+        .align-items-med-stretch{       
+            align-items: stretch;
+        }
+    
+        .align-self-med-center{    
+            align-self: center;
+        }
+    
+        .align-self-med-start{
+            align-items: flex-start;
+        }
+    
+        .align-self-med-end{
+            align-items: flex-end;
+        }
+        
+
+}
+
+@media screen and (min-width: 992px) {
+    
+    /* Colonna */
+    
+    /* REGOLE PER TUTTE LE COLONNE */
+    
+    .row > [class^='column-large']{
+        /* Così non sballa */
+        flex-shrink: 0;
+    
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+    
+    /* COLONNE CHE SI DIVIDONO LO SPAZIO EQUAMENTE */
+    
+    .row > .column-large{
+        /* Cosicchè tutte le colonne avranno la stessa dimensione e quindi saranno uguali */
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    
+    /* GRIGLIA IN 12esimi */
+    
+    .row > .column-large-1{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+    
+    .row > .column-large-2{
+        flex-basis: calc( 100% / 12 * 2);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 2);
+    }
+
+    .row > .column-large-3{
+        flex-basis: calc(100% / 12 * 3);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 3);
+    }
+    
+    .row > .column-large-4{
+        flex-basis: calc( 100% / 12 * 4);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 4);
+    }
+    
+    .row > .column-large-5{
+        flex-basis: calc( 100% / 12 * 5);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 5);
+    }
+
+    .row > .column-large-6{
+        flex-basis: calc(100% / 12 * 6);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .row > .column-large-7{
+        flex-basis: calc(100% / 12 * 7);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .row > .column-large-8{
+        flex-basis: calc(100% / 12 * 8);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .row > .column-large-9{
+        flex-basis: calc(100% / 12 * 9);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .row > .column-large-10{
+        flex-basis: calc(100% / 12 * 10);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .row > .column-large-11{
+        flex-basis: calc(100% / 12 * 11);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .row > .column-large-12{
+        flex-basis: 100%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 100%;
+    }
+
+    /* OFFSET */
+
+    /* Posso spostare le colonne come voglio e di quanto voglio */
+
+        .offset-large-0{
+            margin-left: 0;
+        }
+    
+        .offset-large-1{
+            margin-left: calc(100% / 12); /* Equivale ad 1/12 */
+        }
+    
+        .offset-large-2{
+            margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+        }
+    
+        .offset-large-3{
+            margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+        }
+    
+        .offset-large-4{
+            margin-left: calc(100% / 12 * 4) ; /* Equivale ad 4/12 */
+        }
+    
+        .offset-large-5{
+            margin-left: calc(100% / 12 * 5); /* Equivale ad 5/12 */
+        }
+    
+        .offset-large-6{
+            margin-left: calc(100% / 12 * 6); /* Equivale ad 6/12 */
+        }
+    
+        .offset-large-7{
+            margin-left: calc(100% / 12 * 7); /* Equivale ad 7/12 */
+        }
+    
+        .offset-large-8{
+            margin-left: calc(100% / 12 * 8); /* Equivale ad 8/12 */
+        }
+    
+        .offset-large-9{
+            margin-left: calc(100% / 12 * 9); /* Equivale ad 9/12 */
+        }
+    
+        .offset-large-10{
+            margin-left: calc(100% / 12 * 10); /* Equivale ad 10/12 */
+        }
+    
+        .offset-large-11{
+            margin-left: calc(100% / 12 * 11); /* Equivale ad 11/12 */
+        }
+    
+        /* CLASSI FLEXBOX */
+    
+        .display-large-flex{      
+            display: flex;
+        }
+    
+        .justify-content-large-enter{        
+            justify-content: center;
+        }
+    
+        .justify-content-large-around{        
+            justify-content: space-around;
+        }
+    
+        .justify-content-large-between{       
+            justify-content: space-between;
+        }
+    
+        .justify-content-large-evenly{        
+            justify-content: space-evenly;
+        }
+    
+        .justify-content-large-start{     
+            justify-content: flex-start;
+        }
+    
+        .justify-content-large-end{       
+            justify-content: flex-end;
+        }
+    
+        .align-items-large-center{        
+            align-items: center;
+        }
+    
+        .align-items-large-start{     
+            align-items: flex-start;
+        }
+    
+        .align-items-large-end{       
+            align-items: flex-end;
+        }
+    
+        .align-items-large-stretch{       
+            align-items: stretch;
+        }
+    
+        .align-large-self{    
+            align-self: center;
+        }
+    
+        .align-self-large-start{
+            align-items: flex-start;
+        }
+    
+        .align-self-large-end{
+            align-items: flex-end;
+        }
+        
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Colonna */
+    
+    /* REGOLE PER TUTTE LE COLONNE */
+    
+    .row > [class^='column-xl']{
+        /* Così non sballa */
+        flex-shrink: 0;
+    
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+    
+    /* COLONNE CHE SI DIVIDONO LO SPAZIO EQUAMENTE */
+    
+    .row > .column-xl{
+        /* Cosicchè tutte le colonne avranno la stessa dimensione e quindi saranno uguali */
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    
+    /* GRIGLIA IN 12esimi */
+    
+    .row > .column-xl-1{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+    
+    .row > .column-xl-2{
+        flex-basis: calc( 100% / 12 * 2);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 2);
+    }
+
+    .row > .column-xl-3{
+        flex-basis: calc(100% / 12 * 3);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 3);
+    }
+    
+    .row > .column-xl-4{
+        flex-basis: calc( 100% / 12 * 4);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 4);
+    }
+    
+    .row > .column-xl-5{
+        flex-basis: calc( 100% / 12 * 5);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 5);
+    }
+
+    .row > .column-xl-6{
+        flex-basis: calc(100% / 12 * 6);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .row > .column-xl-7{
+        flex-basis: calc(100% / 12 * 7);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .row > .column-xl-8{
+        flex-basis: calc(100% / 12 * 8);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .row > .column-xl-9{
+        flex-basis: calc(100% / 12 * 9);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .row > .column-xl-10{
+        flex-basis: calc(100% / 12 * 10);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .row > .column-xl-11{
+        flex-basis: calc(100% / 12 * 11);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .row > .column-xl-12{
+        flex-basis: 100%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 100%;
+    }
+
+    /* OFFSET */
+
+    /* Posso spostare le colonne come voglio e di quanto voglio */
+
+        .offset-xl-0{
+            margin-left: 0;
+        }
+    
+        .offset-xl-1{
+            margin-left: calc(100% / 12); /* Equivale ad 1/12 */
+        }
+    
+        .offset-xl-2{
+            margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+        }
+    
+        .offset-xl-3{
+            margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+        }
+    
+        .offset-xl-4{
+            margin-left: calc(100% / 12 * 4) ; /* Equivale ad 4/12 */
+        }
+    
+        .offset-xl-5{
+            margin-left: calc(100% / 12 * 5); /* Equivale ad 5/12 */
+        }
+    
+        .offset-xl-6{
+            margin-left: calc(100% / 12 * 6); /* Equivale ad 6/12 */
+        }
+    
+        .offset-xl-7{
+            margin-left: calc(100% / 12 * 7); /* Equivale ad 7/12 */
+        }
+    
+        .offset-xl-8{
+            margin-left: calc(100% / 12 * 8); /* Equivale ad 8/12 */
+        }
+    
+        .offset-xl-9{
+            margin-left: calc(100% / 12 * 9); /* Equivale ad 9/12 */
+        }
+    
+        .offset-xl-10{
+            margin-left: calc(100% / 12 * 10); /* Equivale ad 10/12 */
+        }
+    
+        .offset-xl-11{
+            margin-left: calc(100% / 12 * 11); /* Equivale ad 11/12 */
+        }
+    
+        /* CLASSI FLEXBOX */
+    
+        .display-xl-flex{      
+            display: flex;
+        }
+    
+        .justify-content-xl-enter{        
+            justify-content: center;
+        }
+    
+        .justify-content-xl-around{        
+            justify-content: space-around;
+        }
+    
+        .justify-content-xl-between{       
+            justify-content: space-between;
+        }
+    
+        .justify-content-xl-evenly{        
+            justify-content: space-evenly;
+        }
+    
+        .justify-content-xl-start{     
+            justify-content: flex-start;
+        }
+    
+        .justify-content-xl-end{       
+            justify-content: flex-end;
+        }
+    
+        .align-items-xl-center{        
+            align-items: center;
+        }
+    
+        .align-items-xl-start{     
+            align-items: flex-start;
+        }
+    
+        .align-items-xl-end{       
+            align-items: flex-end;
+        }
+    
+        .align-items-xl-stretch{       
+            align-items: stretch;
+        }
+    
+        .align-xl-self{    
+            align-self: center;
+        }
+    
+        .align-self-xl-start{
+            align-items: flex-start;
+        }
+    
+        .align-self-xl-end{
+            align-items: flex-end;
+        }
+        
+}
+
+@media screen and (min-width: 1400px){
+
+    /* Colonna */
+    
+    /* REGOLE PER TUTTE LE COLONNE */
+    
+    .row > [class^='column-xxl']{
+        /* Così non sballa */
+        flex-shrink: 0;
+    
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+    
+    /* COLONNE CHE SI DIVIDONO LO SPAZIO EQUAMENTE */
+    
+    .row > .column-xxl{
+        /* Cosicchè tutte le colonne avranno la stessa dimensione e quindi saranno uguali */
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    
+    /* GRIGLIA IN 12esimi */
+    
+    .row > .column-xxl-1{
+        flex-basis: calc(100% / 12);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12);
+    }
+    
+    .row > .column-xxl-2{
+        flex-basis: calc( 100% / 12 * 2);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 2);
+    }
+
+    .row > .column-xxl-3{
+        flex-basis: calc(100% / 12 * 3);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 3);
+    }
+    
+    .row > .column-xxl-4{
+        flex-basis: calc( 100% / 12 * 4);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 4);
+    }
+    
+    .row > .column-xxl-5{
+        flex-basis: calc( 100% / 12 * 5);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc( 100% / 12 * 5);
+    }
+
+    .row > .column-xxl-6{
+        flex-basis: calc(100% / 12 * 6);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 6);
+    }
+
+    .row > .column-xxl-7{
+        flex-basis: calc(100% / 12 * 7);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 7);
+    }
+
+    .row > .column-xxl-8{
+        flex-basis: calc(100% / 12 * 8);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 8);
+    }
+
+    .row > .column-xxl-9{
+        flex-basis: calc(100% / 12 * 9);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 9);
+    }
+
+    .row > .column-xxl-10{
+        flex-basis: calc(100% / 12 * 10);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 10);
+    }
+
+    .row > .column-xxl-11{
+        flex-basis: calc(100% / 12 * 11);
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: calc(100% / 12 * 11);
+    }
+
+    .row > .column-xxl-12{
+        flex-basis: 100%;
+    
+        /* Blocca il contenuto all'interno della colonna */
+        max-width: 100%;
+    }
+
+    /* OFFSET */
+
+    /* Posso spostare le colonne come voglio e di quanto voglio */
+
+        .offset-xxl-0{
+            margin-left: 0;
+        }
+    
+        .offset-xxl-1{
+            margin-left: calc(100% / 12); /* Equivale ad 1/12 */
+        }
+    
+        .offset-xxl-2{
+            margin-left: calc(100% / 12) * 2; /* Equivale ad 2/12 */
+        }
+    
+        .offset-xxl-3{
+            margin-left: calc(100% / 12  3); /* Equivale ad 3/12 */
+        }
+    
+        .offset-xxl-4{
+            margin-left: calc(100% / 12 * 4) ; /* Equivale ad 4/12 */
+        }
+    
+        .offset-xxl-5{
+            margin-left: calc(100% / 12 * 5); /* Equivale ad 5/12 */
+        }
+    
+        .offset-xxl-6{
+            margin-left: calc(100% / 12 * 6); /* Equivale ad 6/12 */
+        }
+    
+        .offset-xxl-7{
+            margin-left: calc(100% / 12 * 7); /* Equivale ad 7/12 */
+        }
+    
+        .offset-xxl-8{
+            margin-left: calc(100% / 12 * 8); /* Equivale ad 8/12 */
+        }
+    
+        .offset-xxl-9{
+            margin-left: calc(100% / 12 * 9); /* Equivale ad 9/12 */
+        }
+    
+        .offset-xxl-10{
+            margin-left: calc(100% / 12 * 10); /* Equivale ad 10/12 */
+        }
+    
+        .offset-xxl-11{
+            margin-left: calc(100% / 12 * 11); /* Equivale ad 11/12 */
+        }
+    
+        /* CLASSI FLEXBOX */
+    
+        .display-xxl-flex{      
+            display: flex;
+        }
+    
+        .justify-content-xxl-enter{        
+            justify-content: center;
+        }
+    
+        .justify-content-xxl-around{        
+            justify-content: space-around;
+        }
+    
+        .justify-content-xxl-between{       
+            justify-content: space-between;
+        }
+    
+        .justify-content-xxl-evenly{        
+            justify-content: space-evenly;
+        }
+    
+        .justify-content-xxl-start{     
+            justify-content: flex-start;
+        }
+    
+        .justify-content-xxl-end{       
+            justify-content: flex-end;
+        }
+    
+        .align-items-xxl-center{        
+            align-items: center;
+        }
+    
+        .align-items-xxl-start{     
+            align-items: flex-start;
+        }
+    
+        .align-items-xxl-end{       
+            align-items: flex-end;
+        }
+    
+        .align-items-xxl-stretch{       
+            align-items: stretch;
+        }
+    
+        .align-xxl-self{    
+            align-self: center;
+        }
+    
+        .align-self-xxl-start{
+            align-items: flex-start;
+        }
+    
+        .align-self-xxl-end{
+            align-items: flex-end;
+        }      
+
+}

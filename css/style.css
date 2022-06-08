@@ -1,0 +1,21 @@
+header{
+    padding: 5px;
+}
+
+.debug > *{
+    border: 1px dashed black;
+}
+
+.row{
+    margin: 0 -5px;
+    height: 30px;
+}
+
+.row > [class^='column']{
+    padding: 0 5px;
+}
+
+.card{
+    max-width: 100%;
+    background-color: #166CFA;
+}
